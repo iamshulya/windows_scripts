@@ -1,0 +1,2 @@
+Mail,Name,mailNickname,Type,proxyAddresses,targetAddress
+ivav.ivanov@mail.ru,ivav.ivanov,ivav.ivanov,contact,SMTP:ivav.ivanov@mail.ru,SMTP:ivav.ivanov@mail.ru

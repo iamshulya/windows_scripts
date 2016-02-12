@@ -1,0 +1,1 @@
+Import-CSV -Path ".\contacts.csv" | ForEach-Object -process {New-ADObject -Path "OU=Contacts,DC=rdcm,DC=local" -Name $_.Name -Type $_.Type -DisplayName $_.Name -OtherAttributes @{'Mail'=$_.mail; 'proxyAddresses'=$_.proxyAddresses; 'targetAddress'=$_.targetAddress; 'mailNickname'=$_.mailNickname}}
